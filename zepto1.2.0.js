@@ -288,6 +288,8 @@
   // "selectAll Class" 87
   // "byTagName" 66
   // "selectAll Tag" 108
+  // 应变方案 id => class => tag => querySelectorAll
+  // （最后querySelectorAll方案适用于比如没有getElementById/getElementsByClassName方法或name=xx等情况）
   zepto.qsa = function(element, selector){
     var found,
         maybeID = selector[0] == '#',
